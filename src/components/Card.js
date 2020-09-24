@@ -21,7 +21,7 @@ class Card extends React.Component {
         }, 5000)
     }
     render() {
-        const { title, description, image, leftColor, rightColor } = this.props
+        const { title, description, leftColor, rightColor } = this.props
         return (
             <div className="card mx-auto Fitness-Card"
                 style={{
@@ -31,7 +31,7 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={this.state.image} alt="trucho" className="float-right"></img>
+                            <img src={this.props.image} alt="trucho" className="float-right"></img>
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{title}</h1>
