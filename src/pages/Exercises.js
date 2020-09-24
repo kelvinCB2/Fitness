@@ -1,6 +1,8 @@
 import React from 'react'
-import ExerciseList from '../components/ExerciseList'
 import Welcome from '../components/Welcome'
+import ExerciseList from '../components/ExerciseList'
+import AddButton from '../components/AddButton'
+
 
 class Exercises extends React.Component{
     constructor(props){
@@ -27,13 +29,6 @@ class Exercises extends React.Component{
                 "image": "https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise03.png?alt=media&token=8e5301c0-151e-415d-bd2c-655235d9c916",
                 "leftColor": "#FAD961",
                 "rightColor": "#F76B1C"
-            },{
-                "id": 4,
-                "title": "React Trucho",
-                "description": "Train anytime, everywere and become a superhero!",
-                "image": "https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise03.png?alt=media&token=8e5301c0-151e-415d-bd2c-655235d9c916",
-                "leftColor": "#FAD961",
-                "rightColor": "#F76B1C"
             }]
         }
     }
@@ -48,6 +43,12 @@ render(){
                     <ExerciseList
                         exercises={this.state.data}
                     />
+
+                    <AddButton
+                    
+                    />
+
+                    
                 </div>
                 )
         }
