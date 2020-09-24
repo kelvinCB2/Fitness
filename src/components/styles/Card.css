@@ -2,6 +2,7 @@
     border: none;
     border-radius: 8px;
     /* background: url('../../images/circles.png') no-repeat, linear-gradient(to right, #A74CF2, #617BFB); */
+    margin-bottom: 30px;
 }
 .Fitness-User-Info {
     margin-top: 50px;
