@@ -7,7 +7,7 @@ import NotFound from '../pages/NotFound'
 const App = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/exercise" component={Exercises}/>
+            <Route exact path="/" component={Exercises}/>
             <Route exact path="/exercise/new" component={ExerciseNew}/>
             <Route component={NotFound}/> // Aparecera eso cuando pongan una url mal
         </Switch>
