@@ -9,7 +9,7 @@ const App = () => (
         <Switch>
             <Route exact path="/" component={Exercises}/>
             <Route exact path="/exercise/new" component={ExerciseNew}/>
-            <Route component={NotFound}/> // Aparecera eso cuando pongan una url mal
+            <Route component={NotFound}/>
         </Switch>
     </BrowserRouter>
 )
